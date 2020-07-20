@@ -3,5 +3,13 @@
   "version": "1.0",
   "description":"hopefully, surprise rickrolls?",
   "icons":{"128":"icon.png"},
+  "background":{
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [{
+    "matches": ["*://*/*"],
+    "js": ["background.js"]
+  }],
   "manifest_version":2
 }
