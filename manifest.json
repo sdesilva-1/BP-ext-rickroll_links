@@ -1,7 +1,7 @@
 {
   "name":"shay's extension practice",
   "version": "1.0",
-  "manifest_version":2,
   "description":"hopefully, surprise rickrolls?",
-  "icons":{"128":"icon.png"}
+  "icons":{"128":"icon.png"},
+  "manifest_version":2
 }
