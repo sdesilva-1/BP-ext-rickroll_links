@@ -1,16 +1,4 @@
-
-var elements = document.querySelectorAll("a");
-for (var i= 0; i < elements.length; i++) {
-    elements[i].style.color = "green";
+var x = document.getElementsByTagName("a");
+for (i = 0; i < x.length; i++) {
+  x[i].setAttribute("href","http://www.rujith.com");
 }
-
-/*
-var elements = document.querySelectorAll("a");
-for (var i= 0; i < elements.length; i++) {
-    elements[i].style.color = "green";
-    var x = elements[i];
-    if(x.tagName=="IMG"){
-        elements[i].src="replaced.jpg";
-    }
-}
-*/
