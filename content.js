@@ -1,9 +1,9 @@
 chrome.storage.local.get(['toggle'], function(items) {
   let toggle = items["toggle"];
-  var x = document.getElementsByTagName("a");
   if (toggle==1){
+    var x = document.getElementsByTagName("a");
     for (i = 0; i < x.length; i++) {
-        x[i].setAttribute("href","https://www.youtube.com/watch?v=oHg5SJYRHA0");
+      x[i].setAttribute("href","https://www.youtube.com/watch?v=oHg5SJYRHA0");
     }
   }
 });

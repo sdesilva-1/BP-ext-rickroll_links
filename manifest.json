@@ -8,11 +8,10 @@
     "default_title": "click to turn off"
   },
   "icons":{"128":"icon1.png"},
-  "content_scripts": [{
-    "matches": ["*://*/*"],
-    "js": ["content.js"],
-    "run_at":"document_end"
-  }],
+  "content_scripts": [
+    {"matches": ["https://www.youtube.com/watch?v=oHg5SJYRHA0"],"js": ["content2.js"]},
+    {"matches": ["*://*/*"],"js": ["content.js"],"run_at":"document_end"}
+  ],
   "manifest_version":2,
   "permissions": [
     "activeTab",
