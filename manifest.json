@@ -15,6 +15,7 @@
   "manifest_version":2,
   "permissions": [
     "activeTab",
-    "storage"
+    "storage",
+    "tabs"
   ]
 }

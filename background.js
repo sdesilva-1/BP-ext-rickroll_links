@@ -22,3 +22,8 @@ chrome.browserAction.onClicked.addListener(function() {
     }
   });
 });
+/*
+chrome.tabs.onRemoved.addListener(function(tabid, removed) {
+  alert("wow you closed the whole tab?? really??? -shay");
+});
+*/

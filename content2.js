@@ -1,2 +1,4 @@
 alert("ohoho");
-window.onpagehide=function(){alert("ohohoho");};
+chrome.tabs.onRemoved.addListener(function(tabid, removed) {
+  alert("wow you closed the whole tab?? really??? -shay");
+});
