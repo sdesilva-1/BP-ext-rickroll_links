@@ -2,6 +2,9 @@ chrome.runtime.onInstalled.addListener(function() {
   chrome.storage.local.set({"toggle": 1}, function() {
     console.log('Value is set to 1');
   });
+  chrome.storage.local.set({"rickroll": 0}, function() {
+    console.log('Rickroll Value is set to 0');
+  });
 });
 
 chrome.browserAction.onClicked.addListener(function() {
@@ -22,8 +25,12 @@ chrome.browserAction.onClicked.addListener(function() {
     }
   });
 });
-/*
-chrome.tabs.onRemoved.addListener(function(tabid, removed) {
-  alert("wow you closed the whole tab?? really??? -shay");
+
+chrome.webNavigation.onCompleted.addListener(function() {
+  chrome.storage.local.get("rickroll",function(items){
+    let rickroll = items["rickroll"];
+    if (rickroll==1){
+      chrome.tabs.executeScript({file:"content2b.js"});
+    };
+  });
 });
-*/
