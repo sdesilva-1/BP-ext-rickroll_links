@@ -5,6 +5,9 @@ chrome.runtime.onInstalled.addListener(function() {
   chrome.storage.local.set({"rickroll": 0}, function() {
     console.log('Rickroll Value is set to 0');
   });
+  chrome.storage.local.set({"receivedName": ":)"}, function() {
+    console.log('name is set to :)');
+  });
 });
 
 chrome.browserAction.onClicked.addListener(function() {

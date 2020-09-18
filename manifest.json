@@ -7,6 +7,7 @@
     "default_icon": "icon1.png",
     "default_title": "click to turn off"
   },
+  "options_page": "options.html",
   "icons":{"128":"icon1.png"},
   "content_scripts": [
     {"matches": ["https://www.youtube.com/watch?v=oHg5SJYRHA0"],"js": ["content2.js"]},
